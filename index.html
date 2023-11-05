@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- next style sheet is there to load hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- font for heading link-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+
+     <!-- favicon -->
+     <link rel="icon" href="images/download.png">
+
+    <title>Pets</title>
+    </head>
+
+    <body>
+    <a href = "#main" class = "desktopSkip" tabindex="1"> Skip to Main Content</a>
+        
+    <nav>
+          
+              <div id = "desktopLinks">
+                  <div class = "backgroundColor">
+                    <ul>
+                        <li> <a href="index.html" tabindex="2" class = currentPage> Pets </a></li>
+                        <li> <a href="travel.html" tabindex="3"> Travel</a></li>
+                        <li><a href="recipes.html" tabindex="4"> Recipes</a></li>
+                    </ul>
+                  </div>
+              </div>
+           
+        
+            <div id = "mobileLinks">
+                <div class="topnav">
+
+                    <a href="#main" class="active" aria-label="Skip to the Main Content of this Pets of SI 339 Page">The Pets of SI 339</a>
+
+                    <div id="myLinks">
+                    <a href="index.html" aria-label = "Travel to the pets page"> Pets</a>
+                    <a href="travel.html" aria-label = "Travel to the travel page"> Travel</a>
+                    <a href="recipes.html" aria-label = "Travel to the recipes page"> Recipes</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label = "Expand nav menu">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+            </div>
+        
+            
+            </nav>
+        
+            <!-- function that is needed for the operation of the bar-->
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
+
+
+<main id = "petsMain">
+<h1> The Pets of SI 339 </h1>
+
+<div class = "pets">
+
+    <div class = "petTablet">
+      <div class = "petGrid">
+      <h2>Riley</h2>
+      <img src = "images/riley_primary.jpg" alt = "Apricot goldendoodle wearing blue bandana lying next to ball"  class = "petPrimary" id = "petTop">
+      
+      <div class = "background">
+        <div class = "text" tabindex = "0">
+          <p id = "main"> Riley is a 2yr old goldendoodle. He is very active and loves attention. Riley can be pretty mischievous; as such, his favorite activity is begging for (or stealing) food, however getting cuddled on a cool floor comes as a close second. In addition, Riley loves to walk in his local park or hang out with his best friend Cosmo.</p>
+        <br>
+          <p> Riley would NOT survive in the wild. He is very stubborn, jealous, and pampered. He is currently in his “terrible twos,” and must get everything his way. That said, Riley is loved by his family as a perfect, funny, and loyal dog. </p>
+        </div>
+      </div>
+      
+      <!-- slideshow for photo gallery -->
+      <h3 class = "pgGallery">Photo Gallery</h3>
+      <div class = "petSlide">
+      
+      <div class = "slides fade">
+       <div class="numbertext">1 / 4</div>
+          <img src = "images/riley_sleeping.jpg" alt = "Goldendoodle peacefully resting on their dog bed"></div>
+      
+      <div class = "slides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src = "images/riley_park.PNG" alt = "Happy goldendoodle chilling by the Potomac River">
+      </div>
+      
+      <div class = "slides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src = "images/riley_friend.PNG" alt = "Goldendoodle and traditional doodle playing together with a stick"> </div>
+      
+      <div class = "slides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src = "images/riley_texting.jpeg" alt = "Silly dog texting on an iPad"> </div>
+      <!-- works for the buttons on the slideshow -->
+      <a class="prev" onclick="plusSlides(-1)" aria-label = "See previous image of Riely" tabindex="0" >&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" aria-label = "See next Image of Riely" tabindex="0" >&#10095;</a>
+      </div>
+      <!-- function needed for slideshow-->
+      <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+      
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+      
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+      
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+          }
+          </script>
+      <div class = "petLikes">
+          <h3>Likes</h3>
+          <ul>
+              <li>The couch</li>
+              <li>Being grumpy</li>
+              <li>Kitchen countertops</li>
+          </ul>
+      </div>
+      
+      <!--Adam Cole-->
+      
+       </div>
+      
+              <div class = "petGrid">
+                  <h2>Bo</h2>
+                  <img src="images/bo.jpg" alt="Black and white dog sitting on grass" class = "petPrimary">
+                  <div class = "background">
+                    <div class = "text" tabindex = "0">
+                      <p>Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot.
+                      </p>
+                      <br>
+                      <p>He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.
+                      </p>
+                    </div>
+                  </div>
+                  <h3 class = "pgGallery" >Photo Gallery</h3>
+              <!-- slideshow for photo gallery -->
+                  <div class = petSlide>
+                   <div class = "slides2 fade">
+                      <div class = "numbertext"> 1 / 4</div>
+                      <img src="images/bo_walking.jpg" alt="black and white dog walking on grass">
+                  </div>
+                  <div class = "slides2 fade">
+                      <div class = "numbertext"> 2 / 4</div>
+                      <img src="images/bo_and_friend.jpg" alt="black and white dog sitting by other black dog">
+                  </div>
+                  <div class = "slides2 fade">
+                      <div class = "numbertext"> 3 / 4</div>
+                      <img src="images/bo_plane.webp" alt="black and white dog in front of airplane">
+                  </div>
+                  <div class = "slides2 fade">
+                      <div class = "numbertext"> 4 / 4</div>
+                      <img src="images/bo_chair.jpg" alt="black and white dog sitting on top of chair">
+                  </div>
+          <!-- works for the buttons on the slideshow -->
+          <a class="prev2" onclick="plusSlides2(-1)" aria-label = "See previous image of Bo" tabindex="0">&#10094;</a>
+          <a class="next2" onclick="plusSlides2(1)" aria-label = "See next Image of Bo" tabindex="0" >&#10095;</a>
+          </div>
+          <script>
+              let slideIndex2 = 1;
+              showSlides2(slideIndex2);
+      
+              function plusSlides2(n) {
+                showSlides2(slideIndex2 += n);
+              }
+      
+              function currentSlide2(n) {
+                showSlides2(slideIndex2 = n);
+              }
+      
+              function showSlides2(n) {
+                let i;
+                let slides2 = document.getElementsByClassName("slides2");
+                if (n > slides2.length) {slideIndex2 = 1}
+                if (n < 1) {slideIndex2 = slides2.length}
+                for (i = 0; i < slides2.length; i++) {
+                  slides2[i].style.display = "none";
+                }
+                slides2[slideIndex2-1].style.display = "block";
+              }
+              </script>
+      
+      
+                  <div class = "petLikes">
+                      <h3>Likes</h3>
+                      <ul>
+                          <li>Walks</li>
+                          <li>The Sun</li>
+                          <li>Treats</li>
+                      </ul>
+                  </div>
+                  <!-- Joseph Schaubroeck-->
+              </div>
+      
+      
+      
+              <div class = "petGrid">
+                  <h2>Cheeto (Chicken)</h2>
+      
+                  <img src="images/cheeto_cattree.jpg"
+                  alt="Orange cat hanging paws off a cat tower" class = "petPrimary">
+                  <div class = "background">
+                    <div class = "text" tabindex = "0">
+                      <p class = "paragraph">Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he is not causing problems, he is usually hiding in a seven foot tall cat tree and sleeping.</p>
+                      <br>
+                      <p class = "paragraph">Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.
+                      </p>
+                    </div>
+                  </div>
+      
+                  <h3 class = "pgGallery">Photo Gallery</h3>
+                   <!-- slideshow for photo gallery -->
+                  <div class = petSlide>
+                      <div class = "slides3 fade">
+                      <div class = "numbertext"> 1 / 4 </div>
+                          <img src="images/cheeto_carpet.jpg"
+                          alt="Cheeto laying sideways on the carpet.">
+                      </div>
+                      <div class = "slides3 fade">
+                       <div class = "numbertext"> 2 / 4 </div>
+                          <img src="images/cheeto_moon.jpg"
+                          alt="Cheeto lying in the sun in a half moon crescent shape">
+                      </div>
+                      <div class = "slides3 fade">
+                      <div class = "numbertext"> 3 / 4 </div>
+                          <img src="images/cheeto_boxes.jpg"
+                          alt="Cheeto lying on boxes with one leg hanging off.">
+                      </div>
+                      <div class = "slides3 fade">
+                       <div class = "numbertext"> 4 / 4 </div>
+                          <img src="images/cheeto_attack.jpg"
+                          alt="Cheeto attacking a hand trying to pet him.">
+                      </div>
+                      <a class="prev3" onclick="plusSlides3(-1)" aria-label = "See previous image of Cheeto" tabindex="0" >&#10094;</a>
+                      <a class="next3" onclick="plusSlides3(1)" aria-label = "See next image of Cheeto" tabindex="0">&#10095;</a>
+                  </div>
+                  <script>
+                      let slideIndex3 = 1;
+                      showSlides3(slideIndex3);
+      
+                      function plusSlides3(n) {
+                        showSlides3(slideIndex3 += n);
+                      }
+      
+                      function currentSlide3(n) {
+                        showSlides3(slideIndex3 = n);
+                      }
+      
+                      function showSlides3(n) {
+                        let i;
+                        let slides3 = document.getElementsByClassName("slides3");
+                        if (n > slides3.length) {slideIndex3 = 1}
+                        if (n < 1) {slideIndex3 = slides3.length}
+                        for (i = 0; i < slides3.length; i++) {
+                          slides3[i].style.display = "none";
+                        }
+                        slides3[slideIndex3-1].style.display = "block";
+                      }
+                      </script>
+                  <div class = "petLikes">
+                      <h3>Likes</h3> <ul>
+                          <li>Treats</li>
+                          <li>Exploring</li>
+                          <li>My Dad</li>
+                      </ul>
+                  </div>
+                  <!-- Divya Shankar    -->
+              </div>
+      
+      
+              <div class = "petGrid">
+      
+                  <h2>Pappy</h2>
+      
+                  <img src = "images/couch_pappy.jpg" alt = " Tan Morkie sitting on couch"  class = "petPrimary">
+      
+                  <div class = "background">
+                    <div class = "text" tabindex = "0">
+                      <p class = "paragraph"> Pappy is a 7 year old morkie. Most days he prefers to spend it laying around the house in his various favorite spots. Most of the time you can find him lying in his bed. He loves going with walks, but still hasn’t figured out how to approach other dogs without scaring them off. He loves his family and loves to keep intruders away even for his size.</p>
+                      <br>
+                      <p class = "paragraph"> He also enjoys playing with his favorite basketball. He loves pushing it around, scratching it, or even talking with it. He also loves his little stuffed animal too. Pappy also loves to be scratched and will ask you to keep scratching until he is happy.</p>
+                    </div>
+                  </div>
+      
+                  <h3 class = pgGallery> Photo Gallery </h3>
+                  <!-- slideshow -->
+      
+                 <div class = petSlide>
+                     <div class = "slides4 fade">
+                      <div class = "numbertext"> 1 / 4 </div>
+                      <img src = "images/sun_pappy.jpg" alt = "Pappy taking in the sun on a sun chair"></div>
+                      <div class = "slides4 fade">
+                      <div class = "numbertext"> 2 / 4 </div>
+                          <img src = "images/hiding_pappy.jpeg" alt = "Pappy hiding in his favorite spot when he was younger"></div>
+                      <div class = "slides4 fade">
+                       <div class = "numbertext"> 3 / 4 </div>
+      
+                          <img src = "images/glasses_pappy.jpg" alt = "Pappy putting on “his glasses” to read a book"></div>
+                      <div class = "slides4 fade">
+                      <div class = "numbertext"> 4 / 4 </div>
+                          <img src = "images/popsicle_pappy.jpg" alt = "Pappy enjoying a homemade popsicle on a hot summer day"></div>
+      
+                          <!-- button code -->
+      
+                          <a class="prev4" onclick="plusSlides4(-1)" aria-label = "See previous image of Pappy" tabindex="0" >&#10094;</a>
+                          <a class="next4" onclick="plusSlides4(1)" aria-label = "See next Image of Pappy" tabindex="0">&#10095;</a>
+                 </div>
+      
+              <script>
+                  let slideIndex4 = 1;
+                  showSlides4(slideIndex4);
+      
+                  function plusSlides4(n) {
+                    showSlides4(slideIndex4 += n);
+                  }
+      
+                  function currentSlide4(n) {
+                    showSlides3(slideIndex4 = n);
+                  }
+      
+                  function showSlides4(n) {
+                    let i;
+                    let slides4 = document.getElementsByClassName("slides4");
+                    if (n > slides4.length) {slideIndex4 = 1}
+                    if (n < 1) {slideIndex4 = slides4.length}
+                    for (i = 0; i < slides4.length; i++) {
+                      slides4[i].style.display = "none";
+                    }
+                    slides4[slideIndex4-1].style.display = "block";
+                  }
+                  </script>
+      
+      
+                  <div class = "petLikes">
+                      <h3>Likes</h3>
+                      <ul>
+                          <li>Taking naps with his paws in the air</li>
+                          <li>Getting scratches or belly rubs</li>
+                          <li>Any kind of dog treats</li>
+                      </ul>
+                  </div>
+      
+      
+                  <!--Brian Cereceres-->
+      
+              </div>
+      
+      
+              <div class = "petGrid" id = "tabletLast">
+                  <h2>Terry</h2>
+      
+                  <img src = "images/terry_sitting.jpg" alt = "Black dachshund wearing leash and sitting." class = "petPrimary">
+      
+                  <div class = "background">
+                    <div class = "text" tabindex = "0">
+                      <p class = "paragraph">Terry is a playful and spirited dachshund that loves to play fetch with his bone or tennis ball. He loves wandering in forests and finding large sticks to take home. His favorite foods are kibble and peanut butter. Terry will run around frantically when it’s time to eat at home.</p>
+                      <br>
+                      <p class = "paragraph">
+                          My family found Terry at a shelter and decided to adopt it. He was 4 months old and is now 8 years old. Terry knows how to swim, but we don’t tend to go often. Terry got poison ivy once; however, he quickly recovered and has been doing great since.
+                      </p>
+                    </div>
+                  </div>
+      
+                  <h3 class = pgGallery>Photo Gallery</h3>
+                  <!-- slideshow -->
+                  <div class = "petSlide">
+                      <div class = "slides5 fade">
+                      <div class = "numbertext"> 1 / 4 </div>
+                          <img src = "images/terry_beach.jpg" alt = "Black dachshund wearing sunglasses at a beach."></div>
+                      <div class = "slides5 fade">
+                      <div class = "numbertext"> 2 / 4 </div>
+                          <img src = "images/terry_stick.jpg" alt = "Black dachshund holding stick at lake on rocks."></div>
+                      <div class = "slides5 fade">
+                      <div class = "numbertext"> 3 / 4 </div>
+                          <img src = "images/terry_minion.jpg" alt = "Black dachshund wearing a Minion costume."></div>
+                      <div class = "slides5 fade">
+                       <div class = "numbertext"> 4 / 4 </div>
+                          <img src = "images/terry_reed.jpg" alt = "Black dachshund holding a reed on street."></div>
+      
+                       <!-- button code -->
+      
+                          <a class="prev5" onclick="plusSlides5(-1)" aria-label = "See previous image of Terry" tabindex="0" >&#10094;</a>
+                          <a class="next5" onclick="plusSlides5(1)" aria-label = "See next Image of Terry" tabindex="0" >&#10095;</a>
+                  </div>
+      
+                  <script>
+                      let slideIndex5 = 1;
+                      showSlides5(slideIndex5);
+      
+                      function plusSlides5(n) {
+                        showSlides5(slideIndex5 += n);
+                      }
+      
+                      function currentSlide5(n) {
+                        showSlides5(slideIndex5 = n);
+                      }
+      
+                      function showSlides5(n) {
+                        let i;
+                        let slides5 = document.getElementsByClassName("slides5");
+                        if (n > slides5.length) {slideIndex5 = 1}
+                        if (n < 1) {slideIndex5 = slides5.length}
+                        for (i = 0; i < slides5.length; i++) {
+                          slides5[i].style.display = "none";
+                        }
+                        slides5[slideIndex5-1].style.display = "block";
+                      }
+                      </script>
+      
+                  <div class = "petLikes">
+                      <h3>Likes</h3>
+                      <ul>
+                          <li>Fetch.</li>
+                          <li>Eating.</li>
+                          <li>Belly rubs.</li>
+                      </ul>
+                  </div>
+      
+                      <!-- Alex Mitchell and Matthew Inda -->
+      
+              </div>
+    </div>
+</div>
+
+
+</main>
+
+</body>
+</html>

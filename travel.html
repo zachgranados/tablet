@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- next style sheet is there to load hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- font for heading link-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+
+       <!-- favicon -->
+       <link rel="icon" href="images/plane.png">
+
+    <title>Travel</title>
+
+</head>
+
+<body>
+    <a href = "#mainTravel" class = "desktopSkip"> Skip to Main Content</a>
+    
+    <nav>
+        <div id = "desktopLinks">
+            <ul>
+                <li> <a href="index.html"> Pets</a></li>
+                <li> <a href="travel.html" class = "currentPage"> Travel</a></li>
+                <li><a href="recipes.html"> Recipes</a></li>
+            </ul>  
+        </div>
+    
+        <div id = "mobileLinks">
+            <div class="topnav">
+                <a href="#mainTravel" class="active" aria-label = "Skip to main content of Travel Page"> SI 339's Top Destinations </a>
+                
+                <div id="myLinks">
+                <a href="index.html" aria-label = "Skip to Pets Page"> Pets</a>
+                <a href="travel.html" aria-label = "Skip to Travel Page"> Travel</a>
+                <a href="recipes.html" aria-label = "Skip to Recipes Page"> Recipes</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label = "Click to Open Nav Menu">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+    
+        
+        </nav>
+    
+        <!-- function that is needed for the operation of the bar-->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+
+
+<main id = "travel"> 
+
+<h1> SI 339's Top Destinations</h1>
+
+<div class = travelGrid>
+
+        <div class = location id = "topLocation">
+            <h2 id  = topTitle> Ha Long Bay, Vietnam</h2>
+            <br>
+            <h3 class = geoLocation>Geographical Location: Asia</h3>
+        </div>
+ 
+
+
+    <img src = "images/Halong_Bay.gif" alt = "GIF of Halong Bay" class = "one">
+    
+    <img src = "images/Halong_Bay.jpeg" alt = "Still picture of Halong Bay" class = "two">
+
+
+
+
+
+<div class = "backgroundInfo" id = "mainTravel">
+    <div class = "information" tabindex = "0">
+        <p>Ha Long Bay is a UNESCO world heritage site and a popular tourist destination in northeast Vietnam. The bay is famous for its crystal clear emerald colored waters dotted with limestone mountains that rise up from the water. Many tourists visit and take boat tours around the islands that tend to me named after their peculiar shape. For instance, tourists can take kayak expeditions around the Teapot islets, a set of islands shaped like teapots, or be rowed around Stone Dog, which appears to be shaped like a dog.</p>
+    
+        <p>The Ha Long Bay region is popular for scuba diving, rock climbing and hiking, particularly in mountainous Cát Bà National Park. The nearest city is Hai Phong, which is approximately 75 km away. It is easier to reach Ha Long Bay by boat because the journey from Hai Phong to Ha Long Bay can take nearly 2.5 hours.</p>
+    </div>
+</div>
+
+
+
+
+<div class = figures>
+    <h3>Photo Gallery</h3>
+    
+    
+        <figure class = figOne>
+        <img src = "images/Halong_Boat.jpeg" alt = "Red Boat sailing on the Ha Long Bay with islands in background" width = 200 >
+        <figcaption> A traditional Vietnamese sailboat sails along the Ha Long Bay. Boat tours like this one have become incredibly popular with tourists traveling to Vietnam. </figcaption>
+        </figure>
+    
+    
+    
+    
+        <figure class = figTwo>
+        <img src = "images/Halong_kayak.jpeg" alt = "the back of someones head as they kayak towards an island in Ha Long Bay" width = 200 >
+        <figcaption> Many tourists choose to rent kayaks and explore the bay on their own instead of joining a formal tour. This gives them the flexibility to explore the 1,600 islands that dot the bay on their own!</figcaption>
+        </figure>
+    
+    
+    
+        <figure class = figThree>
+            <img src = "images/Halong_Scuba.jpeg" alt = "Group of scuba divers heading out to dive sit, one solo kayaker">
+            <figcaption>Scuba diving gives tourists the opportunity to see the bay from a very different perspective. Scuba diving allows tourists to experience the 50 species of Mollusc and over 200 unique types of fish Ha Long Bay has to offer!</figcaption>
+        </figure>
+    
+    
+        <figure class = figFour>
+            <img src = "images/Halong_teapot.jpeg" alt = "Island that roughly appears to be a teapot">
+            <figcaption>Many of the 1,600 islands that dot the bay have been named for there unique shape. In fact, the series of islands that are pictured here have been dubbed the teapot islets because they resemble a teapot!</figcaption>
+        </figure>
+    
+    
+    
+        <figure class = figFive>
+            <img src = "images/Halong_cave.jpeg" alt = "People moving through a cave">
+            <figcaption>Some of the larger islands that dot Ha Long Bay actually house massive caves that are open to the public. This is an image of Sung Sot, which is the largest cave in the bay!</figcaption>
+        </figure>
+</div>
+
+
+
+
+<!--Zachary Granados</h4>-->
+
+ </div>
+ 
+
+
+ <div class = "travelGrid">
+
+    <div class = "location">
+        <h2 class = topTitle>Auckland, New Zealand</h2>
+        <br>
+        <h3 class = geoLocation>Geographical Location: Australia</h3>
+    </div>
+
+
+  
+       <img src = "images/Auckland_Primary_Gif.gif" alt = "Gif of Auckland skyline" class = "one">
+
+        <img src = "images/Auckland_Primary_Image.jpg" alt = "still picture of Auckland skyline"  class = "two" id = "auckland">
+
+    
+    
+    
+    <div class = "backgroundInfo">
+        <div class = "information" tabindex = "0">
+            <p>Auckland is the largest city in New Zealand located on the Northern Island of the country. The city’s population is just below 1.7 million people. Auckland is known as the “City of Sails” for its plethora of sailboats and yachts. The vast amount of waterfronts and harbors are conveniently located for sailors to embark on their hobbies.</p>
+        
+            <p>Aside from sailing and waterfronts, Auckland is also surrounded by 48 volcanoes and a few rainforests. The climate of Auckland is mild-temperate. The winters are not too cold (averaging 64 degrees Fahrenheit) and summers mildly harsh (around 80 degrees Fahrenheit). </p>
+        </div>
+    </div>
+    
+    
+    <div class = figures> 
+        <h3>Photo Gallery</h3>
+        
+        <figure class = figOne>
+            <img src = "images/Auckland_Volcano.jpg" alt = " One of the many ancestral volcanic fields in Auckland surrounded by water" width = 200>
+        
+            <figcaption>Located in Western Auckland, Browns Island is home to one of the oldest volcanoes. It erupted over 20,000 years ago, and has since been become a famous tourist destination. </figcaption>
+        </figure>
+        
+        
+        
+        <figure class = figTwo>
+           <img src = "images/Auckland_Eden_Park.jpg" alt = "Bird’s eye view of Eden Park before a rugby game" width = 200>
+            <figcaption>Eden Park is New Zealand’s largest stadium located in Auckland, with a capacity of 50,000. The stadium has been the country’s largest since 1910, and has hosted rugby, cricket, and soccer games.</figcaption>
+        </figure>
+        
+        <figure class = figThree>
+            <img src = "images/Auckland_Museum.jpg" alt = "An image of the famous War Memorial Museum in Auckland during daytime" width = 200>
+        
+        
+            <figcaption>
+                Built in the 1920s, the War Memorial Museum in AUckland is one of the oldest and most significant museums in New Zealand. It serves as a homage to the country’s military, and is also a research institution for social and environmental matters. 
+            </figcaption>
+        </figure>
+        
+        <figure class = figFour>
+            <img src = "images/Auckland_Tiritiri.jpg" alt = "Tourists on a bridge leaving the Island during the daytime and going back to the ferry.">
+        
+        
+            <figcaption>
+                Tiritiri Matangi Island is located in Auckland and is among the oldest wildlife sanctuaries in the country. The island is brimming with animals unlikely to be found on the mainland. It is also known as a nature conservancy island.
+            </figcaption>
+        </figure>
+        
+        
+        <figure class = figFive>
+            <img src = "images/Auckland_Harbour_Bridge.jpg" alt = " Auckland Harbour Bridge shining with lights at the nighttime">
+        
+        
+            <figcaption>
+                Constructed in 1954, the Auckland Harbour Bridge connects the main city to the north shore. It is a bridge for motor vehicles with 8 lanes. The bridge is also equipped with 90,000 LED lights, allowing it to shine bright at night. 
+            </figcaption>
+        </figure>
+    </div>
+    <!--Satyak Khare-->
+ </div>
+        <div class = travelGrid>
+
+            <div class = "location">
+                <h2 class = topTitle>Tokyo Japan</h2>
+                <br>
+                <h3 class = geoLocation>Geographical location: Asia</h3>
+            </div>
+
+
+                <img src = "images/tokyo_japan.gif" alt = ""  class = "one">
+                
+                <img src = "images/Tokyo_japan2.jpeg" alt = ""  class = "two">
+
+            
+           
+            
+            <div class = backgroundInfo>
+                <div class = "information" tabindex="0">
+                    <p>Tokyo is located on the east side of Japan’s Honshu Island. It is the capital of Japan as well as the most populated city, home to 14 million people. Tokyo has the largest economy in the world of a city by Gross Domestic Product.</p>
+                    <p>Tokyo is known for being one of the most modern cities in the world. Tokyo is sprawling with high skyscrapers all filled with lights and advertisements on the sides along with thousands of people inside of them. Tokyo is also known for historic shrines and temples surrounding the city which have been around for centuries. The oldest temple in Tokyo is called the Sensoji at Asakusa.</p>
+                </div>
+            </div>
+            
+            <div class = "figures">
+                <h3>Photo Gallery</h3>
+                
+                <figure class = "figOne">
+                    <img src = "images/mount_fuji.jpeg" alt = "Mount fuji from a distance" width = 200>
+                    <figcaption>Located just outside of Tokyo, Mount Fuji is the largest mountain in Japan</figcaption>
+                </figure>
+                
+                <figure class = "figTwo">
+                    <img src = "images/Tsukiji.jpeg" alt = "Tsukiji fish market in Tokyo" width = 200>
+                    <figcaption>Tsukiji is the most well known fish market in the world. Located in Tokyo, patrons will arrive at 5 am every morning to purchase fish for the day.</figcaption>
+                </figure>
+                <figure class = "figThree">
+                    <img src = "images/sensoji.jpeg" alt = "Sensoji temple in Tokyo" width = 200>
+                    <figcaption>Located in Asakusa, Sensoji is the oldest temple in Tokyo being built in 645 AD.</figcaption>
+                </figure>
+                
+                <figure class = "figFour">
+                    <img src = "images/tokyo_tower.jpeg" alt = "Tokyo tower at night">
+                
+                    <figcaption>Built in 1958, Tokyo tower has become the most popular landmark in Tokyo. Over 150 million people have visited Tokyo tower since it was first built.</figcaption>
+                </figure>
+                
+                <figure class = "figFive">
+                    <img src = "images/Tokyo_shinjuku_gyoen.jpeg" alt = "Shinjuku Gyoen national garden">
+                
+                    <figcaption>Shinjuku Gyoen is a national garden and is known as one of the most beautiful gardens in the world featuring its cherry blossom trees.</figcaption>
+                </figure>
+            </div>
+            
+            <!--Matt Miller-->
+            
+ 
+
+        </div>
+
+        <div class = travelGrid>
+
+        <div class = "location">
+            <h2 class = topTitle>Disney World, Orlando</h2>
+            <br>
+            <h3 class = geoLocation>Geographical Location: North America</h3>
+        </div>
+
+
+
+            <img src = "images/disney.gif" alt = "GIF of Disney" class = "one">
+            <img src = "images/Disney.jpg" alt = "Still Picture of Disnet" class = "two">
+
+
+        
+
+    <div class = backgroundInfo>
+        <div class = information tabindex="0">
+            <p>Disney World is located in the sunshine state, Florida, within the United States of America. One of the most well known ideas about Florida is that it is a famous tourist spot because year round it stays relatively warm therefore the state's major form of revenue is dependent upon tourists. </p>
+            <p>One of the most famous attractions in Florida, Disney World is located in the city of Florida, Orlando. People from all over the world come to disney to attend its theme parks where along with the thrilling rides there are live shows of different characters that disney has invented. </p>
+        </div>
+    </div>
+
+
+<div class = "figures">
+    <h3>Photo Gallery</h3>
+    
+    <figure class = "figOne">
+        <img src = "images/AnimalKingdomDisney.jpeg" alt = "What the picture shows is the entrance to Animal Kingdom, one of the 4 theme parks at Disney." width = 200>
+        <figcaption>Animal Kingdom- A theme Park in Disney FLorida</figcaption>
+    </figure>
+    
+    
+    <figure class = "figTwo">
+        <img src = "images/HollywoodStudios.jpg" alt = "Tower of terror at Hollywood Studios" width = 200>
+        <figcaption> Hollywood Studios- A theme Park in Disney FLorida</figcaption>
+    </figure>
+    
+    
+    <figure class = "figThree">
+        <img src = "images/MagicKingdom.jpg" alt = "Castle at Magic Kingdom" width = 200>
+    
+        <figcaption>Magic Kingdom- A theme Park in Disney FLorida</figcaption>
+    </figure>
+    
+    
+    <figure class = "figFour">
+        <img src = "images/epcot.jpg" alt = "The globe at Epcot" width = 200>
+        <figcaption>Epcot- A theme Park in Disney FLorida</figcaption>
+    </figure>
+    
+    
+    <figure class = "figFive">
+        <img src = "images/SpaceMountain.png" alt = "Space Mountain in the Magic Kingdom theme park">
+        <figcaption>Space Mountain- one of the most famous rides in Disney World</figcaption>
+    </figure>
+</div>
+
+
+	
+<!--Koshy Jacob-->
+</div>
+
+</main>
+
+</body>
+</html>

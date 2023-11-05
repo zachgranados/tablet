@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="css/reset.css">
+   
+    <link rel="stylesheet" href = "dist/css/lightbox.css">
+
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!-- next style sheet is there to load hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font for heading link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+
+  <!-- favicon -->
+     <link rel="icon" href="images/chefLogo.jpg">
+    <title>Recipes</title>
+</head>
+<body>
+
+
+        <a href = "#recipesMain" class = "desktopSkip"> Skip to Main Content</a>
+        <nav>
+        <div id = "desktopLinks">
+            <ul>
+                <li> <a href="index.html"> Pets</a></li>
+                <li> <a href="travel.html"> Travel</a></li>
+                <li><a href="recipes.html" class = "currentPage"> Recipes</a></li>
+            </ul>
+        </div>
+        <div id = "mobileLinks">
+            <div class="topnav">
+                <a href="#recipesMain" class= "active" aria-label = "Skip to home content of this page"> SI 339 Eats</a>
+
+                <div id="myLinks">
+                <a href="index.html" aria-label = "Link to Pets" tabindex= "0"> Pets</a>
+                <a href="travel.html" aria-label = "Link to Travel"> Travel</a>
+                <a href="recipes.html" aria-label = "Link to Recipes"> Recipes</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label = "Click to Expand Nav menu">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+    
+
+    
+    </nav>
+
+    <!-- function that is needed for the operation of the bar-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        
+
+
+    <main id ="mainTag">
+
+    <div class = "recipes">
+    <h1> SI 339 Eats</h1>
+
+ <!-- START OF RECIPIE ONE -->
+        <div class = "recipeGrid">
+
+            <h2>Venezuelan Arepas</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Arepa_de_pabellon.jpg" 
+            alt="a cheese and chicken arepa" class = "primary" id = "top">
+            
+            <div class = "overview">
+                <span>Origin: Venezuela</span>
+                <br>
+                <span>Source: Healthier Steps </span>
+                <br>
+                <span>Category: Main Course</span>
+          
+
+            <p class = "paragraph"> Mix cornbread with water and salt and form them into several discs. Cook it on an oiled skillet until it is crisp on the outside. Then place into a preheated oven. When they are nice and crisp, split the arepas and fill them with beans, cheese, meat, or vegetables. </p>
+        </div>
+         
+        <div class = "ingredients">
+            <h3 class = "title">Recipe Ingredients:</h3>
+    
+                <ol>
+                    <li>2 cups of cornmeal</li>
+                    <li>2 1/2 cups of water</li>
+                    <li>1 tsp of salt</li>
+                    <li>1 tsp of vegetable oil your choice of filling</li>
+                </ol>
+            </div>
+            
+            <div class = "stepsBackground" id = "recipesMain">
+                <div class = "steps" tabindex="0">
+                <h3> Recipe Steps: </h3>
+                    <ol>
+                        <li>Preheat oven to 400F</li>
+                        <li>Pour water into large bowl</li>
+                        <li>Dissolve the salt into the water</li>
+                        <li>Slowly add cornmeal</li>
+                        <li>Mix until the water salt and cornmeal are all blended</li>
+                        <li>After it is blended, set the bowl aside for 5 minutes</li>
+                        <li>Make your hands wet and begin to pat the dough into discs</li>
+                        <li>Keep creating discs (make sure there are no cracks) and place them onto a nonstick pan with vegetable oil</li>
+                        <li>Flip each arepa after 5 minutes</li>
+                        <li>Place the arepas onto a baking sheet and place them into the preheated oven </li>
+                        <li>After 10 minutes, remove them, cut them open and fill them with your desired ingredients.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+    
+<div class = "photoGallery">
+    <h3>Additional Images</h3>
+      
+            <a href="https://elavegan.com/wp-content/uploads/2023/04/6-arepas-on-wooden-board-with-healthy-fillings-500x500.jpg" target = "_blank" data-lightbox = "arepa" data-title = "Diverse Spread of Arepas" data-alt = "an assortment of arepas">
+               
+                <img src="https://elavegan.com/wp-content/uploads/2023/04/6-arepas-on-wooden-board-with-healthy-fillings-500x500.jpg" alt="an assortment of arepas">
+           
+            </a>
+            
+            <a href="https://www.sidechef.com/recipe/ae5a2ce3-81cc-4147-9f7f-350aa9fd4e50.jpeg?d=1408x1120" target = "_blank" data-lightbox="arepa" data-title = "Fresh Baked Arepas" data-alt = "a group of crispy arepas">
+                <img src="https://www.sidechef.com/recipe/ae5a2ce3-81cc-4147-9f7f-350aa9fd4e50.jpeg?d=1408x1120" alt="a group of crispy arepas">
+            </a>
+            
+            <a href="https://www.cookshideout.com/wp-content/uploads/2020/02/Venezuelan-Vegan-Arepa-FI.jpg" target = "_blank" data-lightbox="arepa" data-title = "Here is an example of a Vegan Arepa" data-alt = "a vegan arepa">
+                <img src="https://www.cookshideout.com/wp-content/uploads/2020/02/Venezuelan-Vegan-Arepa-FI.jpg" alt="a vegan arepa" >
+            </a>
+            
+            <a href="https://www.panningtheglobe.com/wp-content/uploads/2014/03/arepas-sm-file.jpg" target = "_blank" data-lightbox="arepa" data-title = "A Stack of Vegetable Chicken Arepas" data-alt="A stack of chicken and veggie arepas">
+                <img src="https://www.panningtheglobe.com/wp-content/uploads/2014/03/arepas-sm-file.jpg"
+                                    alt="A stack of chicken and veggie arepas" >
+            </a>
+       
+    </div>
+
+    <div class = "mobilePics">
+        <h3>Additional Images</h3>
+        <img src="https://elavegan.com/wp-content/uploads/2023/04/6-arepas-on-wooden-board-with-healthy-fillings-500x500.jpg" alt="an assortment of arepas">
+        <img src="https://www.sidechef.com/recipe/ae5a2ce3-81cc-4147-9f7f-350aa9fd4e50.jpeg?d=1408x1120" alt="a group of crispy arepas">
+         <img src="https://www.panningtheglobe.com/wp-content/uploads/2014/03/arepas-sm-file.jpg"
+         alt="A stack of chicken and veggie arepas" >
+    </div>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    </div>
+    
+ <!--Julian Mueller-->
+
+
+
+
+        <div class = "recipeGrid">
+
+            <h2>Dead Simple Fried Rice</h2>
+
+            <img src = "images/dead-simple-fried-rice-primary.jpg" alt = empty class = primary>
+
+            <div class = "overview">
+                <span>Origin: American/East Asian</span>
+                <br>
+                <span>Source: Self</span>
+                <br>
+                <span>Category: Main Dish</span>
+
+                <p class = "paragraph"> This Dead Simple Fried Rice recipe is an incredibly modular and tasty dish. At its core, it's just rice, vegetables, protein, and oil. As such, the dish can be modified to serve as many or as few people as needed with a wide variety of food preferences. Experimentation with what specific ingredients you enjoy the most will unlock the full potential of this dish. </p>
+            </div>
+
+
+            
+       
+
+            
+
+            <div class = "ingredients">
+                <h3 class = "title">Recipe Ingredients:</h3>
+                    <ul>
+                    <li>Long-grain white rice</li>
+                    <li>Frozen Vegetables</li>
+                    <li>Eggs</li>
+                    <li>(optional) Milk</li>
+                    <li>Oil of Choice</li>
+                    <li>Salt</li>
+                    <li>Soy Sauce</li>
+                    <li>(optional) Additional Sauce </li>
+                    <li> (optional) Additional Protein of Choice </li>
+                    <li>
+                        (optional) Additional Fresh Vegetable
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class = "stepsBackground">
+                <div class = "steps" tabindex="0">
+                    <h3>Recipe Steps:</h3>
+                    <ol>
+                        <li>In a rice cooker, add half a cup of rice, a cup of water, a touch of oil, and a pinch of salt. Cook the rice. Tip: if there are tough frozen veggies, such as broccoli, you might want to add the frozen veggies to the integrated steamer basket.</li>
+                        <li>On high medium heat on your stovetop, in a frying pan, add your chosen oil. Add some milk if desired. Then, scramble the eggs.</li>
+                        <li>Before the eggs are fully done, add the frozen vegetables. Add fresh vegetables when required so they are fully cooked by the end.</li>
+                        <li>(Optional) Add the additional protein when required so they are fully cooked by the end.</li>
+                        <li>Once the rice is done, add it to the pan. Poor your desired amount of Soy Sauce. Stir well.</li>
+                        <li>Let the fried rice cook until the dish is nice and hot and fully cooked.</li>
+                        <li>Plate the fried rice. Enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <div class = photoGallery>
+                <h3>Additional Images</h3>
+            
+                <a href="images/dead-simple-fried-rice-1.jpg" target = "_blank" data-lightbox="fried" data-title="Freshly made fried rice packed for lunch" data-alt = "Dead Simple Fried Rice packed for lunch">
+                    <img src = "images/dead-simple-fried-rice-1.jpg" alt = "Dead Simple Fried Rice packed for lunch">
+                </a>
+                
+                <a href="images/dead-simple-fried-rice-2.jpg" target = "_blank" data-lightbox = "fried" data-title = "The process of making Dead Simple Fried Rice" data-alt="Dead Simple Fried Rice in a frying pan">
+                    <img src = "images/dead-simple-fried-rice-2.jpg" alt = "Another photo of the Dead Simple Fried Rice in a frying pan">
+                </a>
+                
+                <a href="images/dead-simple-fried-rice-3.jpg" target = "_blank" data-lightbox="fried" data-title = "A final product of fried rice" data-alt = "Final product"><img src = "images/dead-simple-fried-rice-3.jpg" alt = "An additional photo of the Dead Simple Fried Rice in a frying pan"></a>
+            </div>
+
+<div class = "mobilePics">
+    <h3>Additional Images</h3>
+    <img src = "images/dead-simple-fried-rice-1.jpg" alt = "Dead Simple Fried Rice packed for lunch">
+    <img src = "images/dead-simple-fried-rice-2.jpg" alt = "Another photo of the Dead Simple Fried Rice in a frying pan">
+    <img src = "images/dead-simple-fried-rice-3.jpg" alt = "An additional photo of the Dead Simple Fried Rice in a frying pan">
+</div>
+            
+            <!--Tristan Goodell-->
+
+        </div>
+
+        <div class = "recipeGrid">
+        
+        <h2>Tomato Basil Pasta</h2>
+
+        <img src = "images/basically-no-cook-tomato-sauce.jpg" alt = "empty"  class = "primary">
+
+        <div class = "overview">
+            <div>
+                <span>Origin: Italian</span>
+                <br>
+                <span>Source: Bon Appetit</span>
+                <br>
+                <span>Category: Main Dish</span>
+            </div>
+            
+            
+            <p class = "paragraph">This recipe is a fantastic way to step up your pasta game without taking too much more of your time. It tastes way better than basic pasta with jarred sauce! I originally found this when my sister made it, and got the recipe off of Bon Appetit's website. PS avoid using the shaker parmesan; I used that the first time I made this and it drew down the quality of the dish.</p>
+        </div>
+        
+        <div class = "ingredients">
+            <h3 class = "title"> Recipe Ingredients:</h3>
+            
+            <ul>
+                <li>Pasta</li>
+            
+                <li>Tomatoes (any larger than cherry)</li>
+            
+                <li>Basil</li>
+            
+                <li>Red Wine Vinegar</li>
+            
+                <li>Extra Virgin Olive Oil</li>
+            
+                <li>Crushed Red Pepper</li>
+            
+                <li>Finely Grated Block of Parmesan</li>
+            </ul>
+        </div>
+
+        <div class = "stepsBackground">
+            <div class = "steps" tabindex = "0">
+                <h3>Recipe Steps</h3>
+            
+                <ol>
+                    <li>Cut tomatoes along equator</li>
+            
+                    <li>Squeeze juice and seeds out of tomatoes and discard</li>
+            
+                    <li>Cut juiced tomatoes into small-ish pieces</li>
+            
+                    <li>Smush down with large spoon to release some leftover juices</li>
+            
+                    <li>Add in vinegar, olive oil, crushed red pepper and half of parmesan</li>
+            
+                    <li>Let marinate for half an hour</li>
+            
+                    <li>Add basil</li>
+            
+                    <li>Cook pasta</li>
+            
+                    <li>Toss marinade with cooked pasta and serve topped with remaining parmesan</li>
+                </ol>
+            </div>
+        </div>
+        
+        
+        <div class = "photoGallery">
+            <h3>Additional Food Images</h3>
+            <a href="images/tomato.jpg" target = "_blank" data-lightbox="pasta" data-title="A Ripe Tomato" data-alt = "A tomato with water droplets"><img src = "images/tomato.jpg" alt = "A juicy tomato with water droplets"></a>
+            
+            <a href="images/basil.jpg" target = _blank data-lightbox="pasta" data-title = "Fresh Basil" data-alt = "Four Basil Leaves"><img src = "images/basil.jpg" alt = "A few leaves of basil"></a>
+            
+            <a href="images/fettuccine.jpg" target = "blank" data-lightbox="pasta" data-ttile = "Pasta in the process of being cooked" data-alt = "fettuccine being cooked"><img src = "images/fettuccine.jpg" alt = "Some fettuccine in a pot of boiling water"></a>
+            
+        </div>
+
+<div class = "mobilePics">
+    <h3>Additional Food Images</h3>
+    <img src = "images/tomato.jpg" alt = "A juicy tomato with water droplets">
+    <img src = "images/basil.jpg" alt = "A few leaves of basil">
+    <img src = "images/fettuccine.jpg" alt = "Some fettuccine in a pot of boiling water">
+</div>
+        
+        <!--Leif Doxey-Van Heest-->
+   </div>      
+
+<div class = recipeGrid>
+
+<h2>Peanut Butter and Jelly Sandwich </h2>
+
+<img src = "images/peanut-butter-and-jelly-sandwich.jpg" alt = ""  class = primary>
+
+<div class = overview>
+    <span>Origin: American</span>
+    <br>
+    <span>Source: Alex Likens </span>
+    <br>
+    <span>Category: Main Dish</span>
+    
+    
+    
+    
+    <p class = "paragraph">This is a dish that is great at all times of year. Its mix of savory flavors with sweet jelly make sit a favorite dish for many people. This dish is great for any situation whether you are on the go, in a rush, or just looking for a tasty meal in your home. </p>
+</div>
+
+<div class = ingredients>
+    <h3 class = "title">Recipe Ingredients </h3>
+    
+    <ul>
+        <li>Bread</li>
+    
+        <li>Peanut Butter</li>
+    
+        <li>Jelly</li>
+    </ul>
+</div>
+
+<div class = "stepsBackground">
+    <div class = "steps" tabindex="0">
+        <h3>Recipe Steps</h3>
+    
+        <ol>
+            <li>Take two piece of bread and place them on a plate</li>
+    
+            <li>Put a thick layer of jelly on one piece of the bread</li>
+    
+            <li>Put a thick layer of peanut butter on the other piece of the bread</li>
+    
+            <li>Put the two pieces of bread together so they face each other</li>
+        </ol>
+    </div>
+</div>
+
+<div class = "photoGallery">
+    <h3>Additional Food Images</h3>
+    
+    <a href="images/pbj2.jpg" target = "_blank" data-lightbox="pbj" data-title= "The PBJ Making Process" data-alt ="Unfinished PBJ"><img src = "images/pbj2.jpg" alt = "Peanut Butter and Jelly in the process of being make" class = "big"></a>
+    
+    <a href="images/pbj3.jpg" target = "_blank" data-lightbox="pbj" data-title="The Finished Product of Mini PBJ" data-alt = "PBJ Finished"><img src = "images/pbj3.jpg" alt = "PBJ finished product 1" ></a>
+    
+    <a href="images/pbj4.jpg" target = "_blank" data-lightbox = "pbj" data-title = "PBJ on Toasted Bread" data-alt = "Finished product" ><img src = "images/pbj4.jpg" alt = "PBJ finished product 2" ></a>
+</div>
+
+<div class = "mobilePics">
+    <h3>Additional Food Images</h3>
+    <img src = "images/pbj2.jpg" alt = "Peanut Butter and Jelly in the process of being make" class = "big">
+    <img src = "images/pbj3.jpg" alt = "PBJ finished product 1" >
+    <img src = "images/pbj4.jpg" alt = "PBJ finished product 2" >
+</div>
+
+
+<!--Alexander Likens -->
+
+ </div>
+
+ <div class = recipeGrid>
+
+ <h2>Tomato and Eggs</h2>
+
+ <img src = "images/tomato-egg-main-image.jpeg" alt = "" class = "primary">
+
+ <div class = "overview">
+     <span>Origin: China</span>
+     <br>
+     <span>Source: Own Recipe</span>
+     <br>
+     <span>Category: Main Dish</span>
+     
+     
+     <p class = paragraph>Tomato and eggs is a hot dish which originated from China. It is a simple and fast dish to make, but it has good nutritional value. It is a very satisfying food to eat and popularly served with rice and topped with green onions.</p>
+ </div>
+
+ <div class = ingredients>
+     <h3 class = "title">Recipe Ingredients</h3>
+     <ul>
+         <li>Tomatoes</li>
+         <li>Eggs</li>
+         <li>Salt</li>
+         <li>Sugar</li>
+         <li>Cooking oil</li>
+     </ul>
+ </div>
+
+ <div class = "stepsBackground">
+     <div class = "steps" tabindex="0">
+         <h3>Recipe Steps</h3>
+         <ol>
+             <li>Crack eggs into a bowl and mix until scrambled</li>
+             <li>Cut tomatoes into pieces around the size of your thumb</li>
+             <li>Oil a hot pan and cook the eggs until satisfied then remove the eggs</li>
+             <li>Re-oil the pan and cook the tomatoes until they loosen</li>
+             <li>Combine eggs and tomatoes and season with salt and sugar</li>
+         </ol>
+     </div>
+ </div>
+
+ <div class = "photoGallery">
+     <h3>Additional Food Images</h3>
+     
+     
+     <a href="images/tomato-egg-side1.jpeg" target = "_blank" data-lightbox="egg" data-title = "Tomato egg served with white rice" data-alt = "Tomato egg with rice"><img src = "images/tomato-egg-side1.jpeg" alt = "Tomato egg with rice"></a>
+     
+     <a href="images/tomatoes-cooking.webp" target = "_blank" data-lightbox="egg" data-title = "Tomatoes cooking on a frying pan" data-alt = "Tomatoes cooking"><img src = "images/tomatoes-cooking.webp" alt = "Tomatoes cooking on a pan"></a>
+     
+     <a href="images/scramble-eggs.jpeg" target = "_blank" data-lightbox="egg" data-title = "Scrambled eggs cooking on a hot pan" data-alt = "eggs cooking on a pan"><img src = "images/scramble-eggs.jpeg" alt = "Scrambled eggs cooking on a pan"></a>
+ </div>
+ 
+ <div class = "mobilePics">
+    <h3>Additional Food Images</h3>
+    
+     <img src = "images/tomato-egg-side1.jpeg" alt = "Tomato egg with rice">
+     <img src = "images/tomatoes-cooking.webp" alt = "Tomatoes cooking on a pan">
+     <img src = "images/scramble-eggs.jpeg" alt = "Scrambled eggs cooking on a pan">
+ </div>
+ 
+ <!--Alex Ni-->
+ 
+ </div>
+
+
+
+</div> 
+</main>
+
+</body>
+</html>
